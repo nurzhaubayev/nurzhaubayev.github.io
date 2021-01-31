@@ -11,13 +11,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-html {
+    html {
   scroll-behavior: smooth;
-}
-</style>
+  }
+  </style>
 </head>
 <body>
-  <header>
+<header>
   <div class="d-flex flex-column flex-md-row align-items-center  px-md-4 mb-3 bg-white border-bottom shadow-sm">
   <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -65,23 +65,31 @@ html {
                              </button>
                          </div>
                          <div class="modal-body">
-                           <form action="check.php" method="post" id="form">
+                           <form action="check.php" method="POST" id="form">
                              <div class="form-group">
-                                 <label for="name" class="col-form-label">Имя*</label>
+                                 <label for="name" class="col-form-label">Имя:*</label>
                                  <input type="text" name="name" class="form-control _req" id="name">
                              </div>
                              <div class="form-group">
-                                 <label for="email" class="col-form-label">Эл. почта*</label>
+                                 <label for="email" class="col-form-label">Эл. почта:*</label>
                                  <input type="email" name="email" class="form-control _req _email" id="email">
                              </div>
                              <div class="form-group">
-                                 <label for="phone" class="col-form-label">Номер телефона*</label>
+                                 <label for="phone" class="col-form-label">Номер телефона:*</label>
                                  <input type="number" name="phone" class="form-control _req" id="phone">
                              </div>
                              <div class="form-group">
-                                 <label for="comment" class="col-form-label">Комментарий</label></br>
-                                 <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
-                                 <!-- <input type="text" class="form-control" id="comment"> -->
+                               <label for="topic">Выберите тему:*</label>
+                           <select name="topic" class="custom-select" id="topic" >
+                               <option value="CCNAv7">CCNA</option>
+                               <option  value="CCNP_Enterprise">CCNP Enterprise</option>
+                               <option  value="HCIA R&S">HCIA R&S</option>
+                               <option value="Scholarship">Стипендия</option>
+                               <option value="Outsourcing">IT-аутсорсинг</option>
+                               <option value="Other">Другое</option>
+
+                           </select>
+                                 
                              </div>
                              <div class="modal-footer">
                                  <button type="submit" class="btn btn-primary">Отправить</button>
@@ -101,10 +109,10 @@ html {
   </div>
 
   </div>
-  </header>
+</header>
 
 <main role="main">
-    <section id="main-slider">
+<section id="main-banner">
 
  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
@@ -116,15 +124,15 @@ html {
         <a class="btn btn-lg btn-primary" href="ccnaoffer.php" role="button">Подробнее</a>
       </div>
     </div>
-</div>
+  </div>
 
-    </section>
+</section>
 <section id="about">
  <div class="mp-about-b" style="padding: 50px 0 0px;">
-   <div class="container">
-       <div class="mp-about" align="center">
+<div class="container">
+<div class="mp-about" align="center">
            <h1 class="display-4" style="margin-bottom: 50px;"> О нас </h1>
- <div class="row">
+<div class="row">
  <div class="col-lg-4" style="margin-bottom: 20px;">
    <img src="img/L21.png" style="width: 150px; height: 150px"  alt="...">
    <h2 style="margin-top: 8px;">Обучение</h2>
@@ -136,15 +144,17 @@ html {
    <h2 style="margin-top: 8px;">IT-аутсорсинг</h2>
    <p>Мы предоставляем доступ к ведущим сетевым технологиям, не требуя высоких начальных  затрат или постоянных инвестиций в модернизацию технологий. Наши услуги включают в себя настройку и мониторинг сети с круглосуточным оповещением и реагированием, анализ производительности, устранение неполадок в сети и консультации.</p>
    <p><a class="btn btn-outline-primary" href="#" role="button">Подробнее</a></p>
- </div><!-- /.col-lg-4 -->
+ </div>
  <div class="col-lg-4" style="margin-bottom: 20px;">
    <img src="img/L25.png" style="width: 150px; height: 150px"  alt="...">
    <h2 style="margin-top: 8px;">Стипендия</h2>
    <p>Казахская Академия Инфокоммуникаций в честь 25-летия Евразийского национального университета им. Л.Н. Гумилева объявляет  научно-образовательный Конкурс на предоставление именной стипендии студентам обучающимся на 2-3 курсах бакалавриата информационно-коммуникационных образовательных программ.</p>
    <p><a class="btn btn-outline-primary" href="#" role="button">Подробнее</a></p>
- </div><!-- /.col-lg-4 -->
+ </div>
 </div>
-  <hr class="featurette-divider">
+</div>
+</div>
+</div>
 </section>
 <section id="video">
    <div class=container>
@@ -156,8 +166,7 @@ html {
      </div>
          <hr class="featurette-divider">
      </div>
-
- </section>
+</section>
 <section id="counter">
             <div class="container text-center" style="padding: 40px 0 50px;">
               <div class="row row-cols-1 row-cols-md-4">
