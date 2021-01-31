@@ -78,29 +78,29 @@ html {
                              </button>
                          </div>
                          <div class="modal-body">
-                           <form>
+                           <form action="check.php" method="post" id="form">
                              <div class="form-group">
                                  <label for="name" class="col-form-label">Имя*</label>
-                                 <input type="text" class="form-control" id="name">
+                                 <input type="text" name="name" class="form-control _req" id="name">
                              </div>
                              <div class="form-group">
                                  <label for="email" class="col-form-label">Эл. почта*</label>
-                                 <input type="text" class="form-control" id="email">
+                                 <input type="email" name="email" class="form-control _req _email" id="email">
                              </div>
                              <div class="form-group">
                                  <label for="phone" class="col-form-label">Номер телефона*</label>
-                                 <input type="text" class="form-control" id="phone">
+                                 <input type="number" name="phone" class="form-control _req" id="phone">
                              </div>
                              <div class="form-group">
                                  <label for="comment" class="col-form-label">Комментарий</label></br>
                                  <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
                                  <!-- <input type="text" class="form-control" id="comment"> -->
                              </div>
+                             <div class="modal-footer">
+                                 <button type="submit" class="btn btn-primary">Отправить</button>
+                             </div>
                          </form>
-                         <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                             <button type="button" class="btn btn-primary">Отправить</button>
-                         </div>
+
                      </div>
                  </div>
              </div>
@@ -168,14 +168,16 @@ html {
  <div class="col-lg-4">
    <img src="img/L21.png" style="width: 150px; height: 150px"  alt="...">
    <h2 style="margin-top: 8px;">Обучение</h2>
-   <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-   <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+   <p>По мере того как мир вокруг нас меняется, приобретение технических навыков расширяют возможности, а перспективы образования дают надежду. Мы обучаем завтрашних преобразователей мира. Вместе с нашими партнерами по образованию и инструкторами, мы взяли на себя обязательство развивать кадры будущего. Присоединяйтесь к нам! Мы меняем мир!</p>
+   <!-- <p>Программа Cisco Networking Academy меняет жизнь людей за счет практического обучения цифровым навыкам, чтобы подготовить студентов к востребованной карьере.</p> -->
+   <p><a class="btn btn-outline-primary" href="#" role="button">Подробнее</a></p>
  </div><!-- /.col-lg-4 -->
  <div class="col-lg-4">
    <img src="img/L23.png" style="width: 150px; height: 150px"  alt="...">
    <h2 style="margin-top: 8px;">IT-аутсорсинг</h2>
-   <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-   <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+   <p>Мы предоставляем доступ к ведущим сетевым технологиям, не требуя высоких начальных  затрат или постоянных инвестиций в модернизацию технологий. Наши услуги включают в себя настройку и мониторинг сети с круглосуточным оповещением и реагированием, анализ производительности, устранение неполадок в сети, консультации на уровне ИТ-директора и обслуживание систем.</p>
+   <!-- <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
+   <p><a class="btn btn-outline-primary" href="#" role="button">Подробнее</a></p>
  </div><!-- /.col-lg-4 -->
  <div class="col-lg-4">
    <img src="img/L25.png" style="width: 150px; height: 150px"  alt="...">
@@ -183,8 +185,8 @@ html {
    <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
 
    <h2 style="margin-top: 8px;">Стипендия</h2>
-   <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-   <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+   <p>Казахская Академия Инфокоммуникаций в честь 25-летия Евразийского национального университета им. Л.Н. Гумилева объявляет  научно-образовательный Конкурс на предоставление именной стипендии студентам обучающиеся на 2-3 курсах бакалавриата информационно-коммуникационных образовательных программ.</p>
+   <p><a class="btn btn-outline-primary" href="#" role="button">Подробнее</a></p>
  </div><!-- /.col-lg-4 -->
 </div>
 <hr class="featurette-divider">
@@ -347,7 +349,7 @@ html {
           <div class="card mb-4 shadow-sm">
             <img src="img/C12.jpg" class="d-block w-100" alt="...">
             <div class="card-body">
-              <p class="card-text">Настольный сетевой тренажер "IT-alem"</p>
+              <p class="card-text">Настольный сетевой тренажер IT-alem</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a class="btn btn-lg btn-block btn-outline-primary" href="news3.php" role="button">Подробнее</a>
